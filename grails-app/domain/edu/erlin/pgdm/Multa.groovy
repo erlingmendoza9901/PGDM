@@ -1,4 +1,4 @@
-package edu.erlin.pgdm.security
+package edu.erlin.pgdm
 
 class Multa {
 
