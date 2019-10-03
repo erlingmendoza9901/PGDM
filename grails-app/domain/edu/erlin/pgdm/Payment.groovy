@@ -9,12 +9,12 @@ class Payment {
 
     String description
 
-    LocalDateTime Date
+    LocalDateTime date
     Ticket ticket
     PaymentType paymentType
-    String Warrant
+    String warrant
     WarrantType warrantType = WarrantType.NONE
-    double Amount
+    double amount
 
     boolean enabled = true
     String createdBy = Constants.SYSTEM
