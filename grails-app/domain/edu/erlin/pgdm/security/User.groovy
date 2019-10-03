@@ -1,6 +1,9 @@
 package edu.erlin.pgdm.security
 
+import edu.erlin.pgdm.utils.Constants
+
 import java.time.LocalDate
+import java.time.LocalDateTime
 
 class User {
 
@@ -16,6 +19,12 @@ class User {
     String email
 
     static hasMany = [permissions: Permission]
+
+    boolean enabled = true
+    String createdBy = Constants.SYSTEM
+    String modifyBy = Constants.SYSTEM
+    LocalDateTime created
+    LocalDateTime updated
 
     static mapping = {
         table "users"
