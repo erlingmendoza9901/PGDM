@@ -6,8 +6,8 @@ import java.time.LocalDateTime
 
 class PaymentType {
 
-    String Name
-    String Description
+    String name
+    String description
 
     boolean enabled = true
     String createdBy = Constants.SYSTEM
@@ -17,5 +17,7 @@ class PaymentType {
 
     static constraints = {
         table "payment_types"
+
+        description sqlType: "text"
     }
 }

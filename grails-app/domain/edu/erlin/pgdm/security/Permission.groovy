@@ -19,5 +19,7 @@ class Permission {
 
     static mapping = {
         table "permissions"
+
+        description sqlType: "text"
     }
 }

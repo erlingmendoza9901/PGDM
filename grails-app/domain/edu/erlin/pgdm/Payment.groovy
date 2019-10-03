@@ -7,11 +7,13 @@ import java.time.LocalDateTime
 
 class Payment {
 
+    String description
+
     LocalDateTime Date
     Ticket ticket
     PaymentType paymentType
     String Warrant
-    WarrantType warrantType
+    WarrantType warrantType = WarrantType.NONE
     double Amount
 
     boolean enabled = true
@@ -22,5 +24,6 @@ class Payment {
 
     static constraints = {
         table "payments"
+        description sqlType: "text"
     }
 }

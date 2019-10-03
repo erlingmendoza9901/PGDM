@@ -6,8 +6,8 @@ import java.time.LocalDateTime
 
 class Status {
 
-    String Name
-    String Description
+    String name
+    String description
 
     boolean enabled = true
     String createdBy = Constants.SYSTEM
@@ -17,5 +17,7 @@ class Status {
 
     static constraints = {
         table "statuses"
+
+        description sqlType: "text"
     }
 }

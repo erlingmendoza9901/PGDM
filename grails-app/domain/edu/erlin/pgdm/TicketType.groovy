@@ -6,8 +6,8 @@ import java.time.LocalDateTime
 
 class TicketType {
 
-    String Name
-    String Description
+    String name
+    String description
     double minCost
     double maxCost
 
@@ -19,5 +19,7 @@ class TicketType {
 
     static constraints = {
         table "ticket_types"
+
+        description sqlType: "text"
     }
 }

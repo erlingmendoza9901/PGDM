@@ -23,5 +23,7 @@ class Param {
 
     static mapping = {
         table "params"
+
+        description sqlType: "text"
     }
 }

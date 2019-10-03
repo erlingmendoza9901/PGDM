@@ -7,8 +7,9 @@ import java.time.LocalDateTime
 
 class Ticket {
 
+    String description
     String warrant
-    WarrantType warrantType
+    WarrantType warrantType = WarrantType.NONE
     LocalDateTime date
     TicketType ticketType
     double amount
@@ -22,5 +23,7 @@ class Ticket {
 
     static mapping = {
         table "tickets"
+
+        description sqlType: "text"
     }
 }
